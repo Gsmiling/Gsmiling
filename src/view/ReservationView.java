@@ -11,20 +11,16 @@ import java.util.List;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import model.Characteristic;
 import model.Client;
-import model.ClientCategory;
 import model.IdentifiedObject;
-import model.Location;
 import model.Reservation;
 import model.ReservationStatement;
 import model.Room;
-import model.RoomType;
 
 
 public final class ReservationView extends javax.swing.JInternalFrame  {
-    private Client client = new Client(WIDTH, title, title, ABORT, PROPERTIES, title, title, ClientCategory.CLIENTGROUP, null);
-    private Room room = new Room(WIDTH, title, ERROR, Location.SEAVIEW, Characteristic.VENTILATED, RoomType.DOUBLE, title);
+    private Client client;
+    private Room room;
     final ReservationController controller ;
     RoomController roomController = new RoomController();
     ClientController clientController = new ClientController();

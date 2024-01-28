@@ -11,7 +11,9 @@ import model.Room;
 public class ListRoomView extends javax.swing.JInternalFrame {
     private IdentifiedObject.Selection s;
 
-  
+    public ListRoomView() {
+        this.controller = null;
+    }
     final RoomController controller;
     public ListRoomView(RoomController controller) {
         this.controller = controller;
@@ -32,7 +34,7 @@ public class ListRoomView extends javax.swing.JInternalFrame {
             s.onSelected(controller.getRooms().get(selectedIndex));
         } else {
             // L'index n'est pas valide, peut-être aucune ligne n'est sélectionnée
-            
+            // Vous pouvez gérer cela en conséquence, par exemple, en ne faisant rien
         }
     }
 
