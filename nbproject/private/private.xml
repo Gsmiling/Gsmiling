@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/gr/Documents/JavaApplication5/src/provider/RoomProvider.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/provider/Provider.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/view/AccueilView.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/view/CustomDialog.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/controller/ReservationController.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/controller/ServiceController.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/model/Room.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/provider/ServiceProvider.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/utils/ImagePicker.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/provider/ClientProvider.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/model/Reservation.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/model/Client.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/provider/ConsommationProvider.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/view/ServiceView.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/view/RoomView.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/view/SwingUtils.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/view/BillView.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/report/report2.jrxml</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/model/IdentifiedObject.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/controller/ClientController.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/view/ListRoomView.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/provider/ReservationProvider.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/model/ReservationStatement.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/view/ClientView.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/view/LoginView.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/controller/RoomController.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/model/Bill.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/provider/ProviderMethod.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/model/ClientCategory.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/view/ReservationView.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/Mainpage.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/controller/BillController.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/model/RoomCategory.java</file>
+            <file>file:/home/gr/Documents/JavaApplication5/src/view/UserView.java</file>
+        </group>
+    </open-files>
+</project-private>

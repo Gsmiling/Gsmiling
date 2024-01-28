@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel43" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                              <Component id="clnom" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
+                              <Component id="clprenom" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
+                              <Component id="jLabel44" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="179" max="32767" attributes="0"/>
+                          <Component id="photoLabel" min="-2" pref="207" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabel42" min="-2" pref="139" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jLabel50" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel45" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                              <Component id="jLabel41" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="clnationalite" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="clphone" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jLabel46" alignment="0" min="-2" pref="114" max="-2" attributes="0"/>
+                              <Component id="cladresse" alignment="0" min="-2" pref="179" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="jLabel47" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="clcategorie" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel48" min="-2" pref="142" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="clcarte" min="-2" pref="165" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="AddPhotoButton4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel52" min="-2" pref="139" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                                  <Component id="Rechercher" min="-2" pref="289" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="AddButton" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="152" max="-2" attributes="0"/>
+                                  <Component id="EditButton" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="165" max="-2" attributes="0"/>
+                                  <Component id="DeleteButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jScrollPane5" min="-2" pref="806" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="jLabel52" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="Rechercher" min="-2" pref="33" max="-2" attributes="0"/>
+                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel42" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <Component id="jLabel50" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="clnom" min="-2" pref="32" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jLabel43" min="-2" pref="40" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="clprenom" min="-2" pref="32" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jLabel44" min="-2" pref="40" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="photoLabel" min="-2" pref="159" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="AddPhotoButton4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="clcarte" min="-2" pref="32" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel45" min="-2" pref="40" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="clphone" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jLabel41" min="-2" pref="40" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                                  <Component id="clnationalite" min="-2" pref="34" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jLabel46" min="-2" pref="25" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="clcategorie" min="-2" pref="34" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel47" min="-2" pref="40" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jScrollPane5" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="cladresse" min="-2" pref="59" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="AddButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="EditButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="DeleteButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="0" pref="9" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel48" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jCheckBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel42">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="NOM"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="clnom">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel43">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="PRENOM"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="clprenom">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel44">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="N&#xb0;CARTE"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="clcarte">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel45">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="N&#xb0;TELEPHONE"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="ClientList">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Cantarell" size="18" style="0"/>
+                </Property>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="8" rowCount="4">
+                    <Column editable="true" title="Matricule" type="java.lang.Object"/>
+                    <Column editable="true" title="Nom" type="java.lang.Object"/>
+                    <Column editable="true" title="Prenom" type="java.lang.Object"/>
+                    <Column editable="true" title="N&#xb0;Carte" type="java.lang.Object"/>
+                    <Column editable="true" title="N&#xb0;Telephone" type="java.lang.Object"/>
+                    <Column editable="true" title="Nationalit&#xe9;" type="java.lang.Object"/>
+                    <Column editable="true" title="Categorie" type="java.lang.Object"/>
+                    <Column editable="true" title="Adresse" type="java.lang.Object"/>
+                  </Table>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
+                </Property>
+                <Property name="gridColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="99" red="0" type="rgb"/>
+                </Property>
+                <Property name="rowHeight" type="int" value="25"/>
+                <Property name="rowMargin" type="int" value="1"/>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ClientListMouseReleased"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="AddPhotoButton4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="AJOUTER"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddPhotoButton4ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="EditButton">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="99" red="33" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="22" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="MODIFIER"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EditButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="DeleteButton">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="0" red="cc" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="22" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="SUPPRIMER"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DeleteButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="clphone">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel41">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="NATIONALITE"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="clnationalite">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="193">
+                <StringItem index="0" value="AFGHANISTAN"/>
+                <StringItem index="1" value="ALBANIE"/>
+                <StringItem index="2" value="ALG&#xc9;RIE"/>
+                <StringItem index="3" value="ANDORRE"/>
+                <StringItem index="4" value="ANGOLA"/>
+                <StringItem index="5" value="ANTIGUA-ET-BARBUDA"/>
+                <StringItem index="6" value="ARGENTINE"/>
+                <StringItem index="7" value="ARM&#xc9;NIE"/>
+                <StringItem index="8" value="AUSTRALIE"/>
+                <StringItem index="9" value="AUTRICHE"/>
+                <StringItem index="10" value="AZERBA&#xcf;DJAN"/>
+                <StringItem index="11" value="BAHAMAS"/>
+                <StringItem index="12" value="BAHRE&#xcf;N"/>
+                <StringItem index="13" value="BANGLADESH"/>
+                <StringItem index="14" value="BARBADE"/>
+                <StringItem index="15" value="B&#xc9;LARUS"/>
+                <StringItem index="16" value="BELGIQUE"/>
+                <StringItem index="17" value="BELIZE"/>
+                <StringItem index="18" value="B&#xc9;NIN"/>
+                <StringItem index="19" value="BHOUTAN"/>
+                <StringItem index="20" value="BOLIVIE"/>
+                <StringItem index="21" value="BOSNIE-HERZ&#xc9;GOVINE"/>
+                <StringItem index="22" value="BOTSWANA"/>
+                <StringItem index="23" value="BR&#xc9;SIL"/>
+                <StringItem index="24" value="BRUN&#xc9;I"/>
+                <StringItem index="25" value="BULGARIE"/>
+                <StringItem index="26" value="BURKINA FASO"/>
+                <StringItem index="27" value="BURUNDI"/>
+                <StringItem index="28" value="CABO VERDE"/>
+                <StringItem index="29" value="CAMBODGE"/>
+                <StringItem index="30" value="CAMEROUN"/>
+                <StringItem index="31" value="CANADA"/>
+                <StringItem index="32" value="R&#xc9;PUBLIQUE CENTRAFRICAINE"/>
+                <StringItem index="33" value="TCHAD"/>
+                <StringItem index="34" value="CHILI"/>
+                <StringItem index="35" value="CHINE"/>
+                <StringItem index="36" value="COLOMBIE"/>
+                <StringItem index="37" value="COMORES"/>
+                <StringItem index="38" value="CONGO (CONGO-BRAZZAVILLE)"/>
+                <StringItem index="39" value="COSTA RICA"/>
+                <StringItem index="40" value="CROATIE"/>
+                <StringItem index="41" value="CUBA"/>
+                <StringItem index="42" value="CHYPRE"/>
+                <StringItem index="43" value="R&#xc9;PUBLIQUE TCH&#xc8;QUE"/>
+                <StringItem index="44" value="R&#xc9;PUBLIQUE D&#xc9;MOCRATIQUE DU CONGO"/>
+                <StringItem index="45" value="DANEMARK"/>
+                <StringItem index="46" value="DJIBOUTI"/>
+                <StringItem index="47" value="DOMINIQUE"/>
+                <StringItem index="48" value="R&#xc9;PUBLIQUE DOMINICAINE"/>
+                <StringItem index="49" value="&#xc9;QUATEUR"/>
+                <StringItem index="50" value="&#xc9;GYPTE"/>
+                <StringItem index="51" value="SALVADOR"/>
+                <StringItem index="52" value="GUIN&#xc9;E &#xc9;QUATORIALE"/>
+                <StringItem index="53" value="&#xc9;RYTHR&#xc9;E"/>
+                <StringItem index="54" value="ESTONIE"/>
+                <StringItem index="55" value="&#xc9;THIOPIE"/>
+                <StringItem index="56" value="FIDJI"/>
+                <StringItem index="57" value="FINLANDE"/>
+                <StringItem index="58" value="FRANCE"/>
+                <StringItem index="59" value="GABON"/>
+                <StringItem index="60" value="GAMBIE"/>
+                <StringItem index="61" value="G&#xc9;ORGIE"/>
+                <StringItem index="62" value="ALLEMAGNE"/>
+                <StringItem index="63" value="GHANA"/>
+                <StringItem index="64" value="GR&#xc8;CE"/>
+                <StringItem index="65" value="GRENADE"/>
+                <StringItem index="66" value="GUATEMALA"/>
+                <StringItem index="67" value="GUIN&#xc9;E"/>
+                <StringItem index="68" value="GUIN&#xc9;E-BISSAU"/>
+                <StringItem index="69" value="GUYANA"/>
+                <StringItem index="70" value="HA&#xcf;TI"/>
+                <StringItem index="71" value="SAINT-SI&#xc8;GE (&#xc9;TAT DE LA CIT&#xc9; DU VATICAN)"/>
+                <StringItem index="72" value="HONDURAS"/>
+                <StringItem index="73" value="HONGRIE"/>
+                <StringItem index="74" value="ISLANDE"/>
+                <StringItem index="75" value="INDE"/>
+                <StringItem index="76" value="INDON&#xc9;SIE"/>
+                <StringItem index="77" value="IRAN"/>
+                <StringItem index="78" value="IRAK"/>
+                <StringItem index="79" value="IRLANDE"/>
+                <StringItem index="80" value="ISRA&#xcb;L"/>
+                <StringItem index="81" value="ITALIE"/>
+                <StringItem index="82" value="JAMA&#xcf;QUE"/>
+                <StringItem index="83" value="JAPON"/>
+                <StringItem index="84" value="JORDANIE"/>
+                <StringItem index="85" value="KAZAKHSTAN"/>
+                <StringItem index="86" value="KENYA"/>
+                <StringItem index="87" value="KIRIBATI"/>
+                <StringItem index="88" value="KOWE&#xcf;T"/>
+                <StringItem index="89" value="KIRGHIZISTAN"/>
+                <StringItem index="90" value="LAOS"/>
+                <StringItem index="91" value="LETTONIE"/>
+                <StringItem index="92" value="LIBAN"/>
+                <StringItem index="93" value="LESOTHO"/>
+                <StringItem index="94" value="LIB&#xc9;RIA"/>
+                <StringItem index="95" value="LIBYE"/>
+                <StringItem index="96" value="LIECHTENSTEIN"/>
+                <StringItem index="97" value="LITUANIE"/>
+                <StringItem index="98" value="LUXEMBOURG"/>
+                <StringItem index="99" value="MAC&#xc9;DOINE DU NORD"/>
+                <StringItem index="100" value="MADAGASCAR"/>
+                <StringItem index="101" value="MALAWI"/>
+                <StringItem index="102" value="MALAISIE"/>
+                <StringItem index="103" value="MALDIVES"/>
+                <StringItem index="104" value="MALI"/>
+                <StringItem index="105" value="MALTE"/>
+                <StringItem index="106" value="&#xce;LES MARSHALL"/>
+                <StringItem index="107" value="MAURITANIE"/>
+                <StringItem index="108" value="MAURICE"/>
+                <StringItem index="109" value="MEXIQUE"/>
+                <StringItem index="110" value="MICRON&#xc9;SIE"/>
+                <StringItem index="111" value="MOLDAVIE"/>
+                <StringItem index="112" value="MONACO"/>
+                <StringItem index="113" value="MONGOLIE"/>
+                <StringItem index="114" value="MONT&#xc9;N&#xc9;GRO"/>
+                <StringItem index="115" value="MAROC"/>
+                <StringItem index="116" value="MOZAMBIQUE"/>
+                <StringItem index="117" value="MYANMAR (BIRMANIE)"/>
+                <StringItem index="118" value="NAMIBIE"/>
+                <StringItem index="119" value="NAURU"/>
+                <StringItem index="120" value="N&#xc9;PAL"/>
+                <StringItem index="121" value="PAYS-BAS"/>
+                <StringItem index="122" value="NOUVELLE-Z&#xc9;LANDE"/>
+                <StringItem index="123" value="NICARAGUA"/>
+                <StringItem index="124" value="NIGER"/>
+                <StringItem index="125" value="NIG&#xc9;RIA"/>
+                <StringItem index="126" value="COR&#xc9;E DU NORD"/>
+                <StringItem index="127" value="NORV&#xc8;GE"/>
+                <StringItem index="128" value="OMAN"/>
+                <StringItem index="129" value="PAKISTAN"/>
+                <StringItem index="130" value="PALAOS"/>
+                <StringItem index="131" value="PALESTINE"/>
+                <StringItem index="132" value="PANAMA"/>
+                <StringItem index="133" value="PAPOUASIE-NOUVELLE-GUIN&#xc9;E"/>
+                <StringItem index="134" value="PARAGUAY"/>
+                <StringItem index="135" value="P&#xc9;ROU"/>
+                <StringItem index="136" value="PHILIPPINES"/>
+                <StringItem index="137" value="POLOGNE"/>
+                <StringItem index="138" value="PORTUGAL"/>
+                <StringItem index="139" value="QATAR"/>
+                <StringItem index="140" value="COR&#xc9;E DU SUD"/>
+                <StringItem index="141" value="ROUMANIE"/>
+                <StringItem index="142" value="RUSSIE"/>
+                <StringItem index="143" value="RWANDA"/>
+                <StringItem index="144" value="SAINT-CHRISTOPHE-ET-NI&#xc9;V&#xc8;S"/>
+                <StringItem index="145" value="SAINTE-LUCIE"/>
+                <StringItem index="146" value="SAINT-VINCENT-ET-LES-GRENADINES"/>
+                <StringItem index="147" value="SAMOA"/>
+                <StringItem index="148" value="SAINT-MARIN"/>
+                <StringItem index="149" value="SAO TOM&#xc9;-ET-PRINCIPE"/>
+                <StringItem index="150" value="ARABIE SAOUDITE"/>
+                <StringItem index="151" value="S&#xc9;N&#xc9;GAL"/>
+                <StringItem index="152" value="SERBIE"/>
+                <StringItem index="153" value="SEYCHELLES"/>
+                <StringItem index="154" value="SIERRA LEONE"/>
+                <StringItem index="155" value="SINGAPOUR"/>
+                <StringItem index="156" value="SLOVAQUIE"/>
+                <StringItem index="157" value="SLOV&#xc9;NIE"/>
+                <StringItem index="158" value="&#xce;LES SALOMON"/>
+                <StringItem index="159" value="SOMALIE"/>
+                <StringItem index="160" value="AFRIQUE DU SUD"/>
+                <StringItem index="161" value="SOUDAN DU SUD"/>
+                <StringItem index="162" value="ESPAGNE"/>
+                <StringItem index="163" value="SRI LANKA"/>
+                <StringItem index="164" value="SOUDAN"/>
+                <StringItem index="165" value="SURINAME"/>
+                <StringItem index="166" value="SU&#xc8;DE"/>
+                <StringItem index="167" value="SUISSE"/>
+                <StringItem index="168" value="SYRIE"/>
+                <StringItem index="169" value="TADJIKISTAN"/>
+                <StringItem index="170" value="TANZANIE"/>
+                <StringItem index="171" value="THA&#xcf;LANDE"/>
+                <StringItem index="172" value="TIMOR ORIENTAL"/>
+                <StringItem index="173" value="TOGO"/>
+                <StringItem index="174" value="TONGA"/>
+                <StringItem index="175" value="TRINIT&#xc9;-ET-TOBAGO"/>
+                <StringItem index="176" value="TUNISIE"/>
+                <StringItem index="177" value="TURQUIE"/>
+                <StringItem index="178" value="TURKM&#xc9;NISTAN"/>
+                <StringItem index="179" value="TUVALU"/>
+                <StringItem index="180" value="OUGANDA"/>
+                <StringItem index="181" value="UKRAINE"/>
+                <StringItem index="182" value="&#xc9;MIRATS ARABES UNIS"/>
+                <StringItem index="183" value="ROYAUME-UNI"/>
+                <StringItem index="184" value="&#xc9;TATS-UNIS"/>
+                <StringItem index="185" value="URUGUAY"/>
+                <StringItem index="186" value="OUZB&#xc9;KISTAN"/>
+                <StringItem index="187" value="VANUATU"/>
+                <StringItem index="188" value="VENEZUELA"/>
+                <StringItem index="189" value="VIETNAM"/>
+                <StringItem index="190" value="Y&#xc9;MEN"/>
+                <StringItem index="191" value="ZAMBIE"/>
+                <StringItem index="192" value="ZIMBABWE"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel46">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="CATEGORIE"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="clcategorie">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="CLIENT PRIVE"/>
+                <StringItem index="1" value="CLIENT AFFAIRE"/>
+                <StringItem index="2" value="CLIENT VIP"/>
+                <StringItem index="3" value="CLIENT GROUPE"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel47">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="ADRESSE"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="cladresse">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cladressetxtadresseActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel48">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="CARTE FIDELITE"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="photoLabel">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel50">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="PHOTO"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="AddButton">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="99" red="0" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="22" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="AJOUTER"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel52">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Cantarell" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Rechercher"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="Rechercher">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RechercherActionPerformed"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="RechercherKeyReleased"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
