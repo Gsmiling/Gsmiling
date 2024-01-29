@@ -45,8 +45,8 @@ public class ReservationProvider implements ProviderMethod {
         java.sql.Date sqlDateDepart = new java.sql.Date(reservation.getDateDepart().getTime());
         java.sql.Date sqlDateReservation = new java.sql.Date(reservation.getDateReservation().getTime());
         
-        preparedStatement.setString(1, reservation.getClientId());
-        preparedStatement.setString(2, reservation.getRoomId());
+        preparedStatement.setInt(1, reservation.getClientId());
+        preparedStatement.setInt(2, reservation.getRoomId());
         preparedStatement.setDate(3, sqlDateArrivee);
         preparedStatement.setDate(4, sqlDateDepart);
         preparedStatement.setDate(5, sqlDateReservation);
@@ -119,7 +119,7 @@ public class ReservationProvider implements ProviderMethod {
             return null;
         }
 
-        String sql = "SELECT * FROM reservation ";
+        String sql = "SELECT reservation.*, client.id_client, client.id_room FROM reservation INNER JOIN reservation.id_client = client.id INNER JOIN reservation.id_room = room.id";
 
         try {
             PreparedStatement preparedStatement = provider.getConnection().prepareStatement(sql);
@@ -129,6 +129,8 @@ public class ReservationProvider implements ProviderMethod {
             if (resultSet.next()) {
                 Reservation reservation = new Reservation(
                         resultSet.getInt("id"),
+                        resultSet.getInt("id_client"),
+                        resultSet.getInt("id_room"),
                         resultSet.getString("id_room"),
                         resultSet.getString("id_client"),
                         resultSet.getDate("date_arrival"),
@@ -146,7 +148,7 @@ public class ReservationProvider implements ProviderMethod {
         return null;
     }
      public List<Reservation> getAllReservations(){
-       String sql = "SELECT reservation.id, room.num_room, client.client_name ,reservation.date_arrival, reservation.date_departure,reservation.date_reservation, reservation.status"
+       String sql = "SELECT reservation.id, room.num_room,reservation.id_client, reservation.id_room, client.client_name ,reservation.date_arrival, reservation.date_departure,reservation.date_reservation, reservation.status"
                + "  FROM reservation INNER JOIN client ON client.id = reservation.id_client INNER JOIN room ON room.id = reservation.id_room ";
 
         try {
@@ -157,6 +159,8 @@ public class ReservationProvider implements ProviderMethod {
             while (resultSet.next()) {
                 Reservation reservation = new Reservation(
                         resultSet.getInt("id"), 
+                        resultSet.getInt("id_client"),
+                        resultSet.getInt("id_room"),
                         resultSet.getString("num_room"),
                         resultSet.getString("client_name"),
                         resultSet.getDate("date_arrival"),

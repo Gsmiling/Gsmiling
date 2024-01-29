@@ -37,11 +37,11 @@ public class BillProvider implements ProviderMethod {
         try {
             PreparedStatement preparedStatement = provider.getConnection().prepareStatement(sql);
             Bill bill = (Bill) object;
-            
+            java.sql.Date sqlDateFacture= new java.sql.Date(bill.getBillDate().getTime());
             preparedStatement.setString(2, bill.getBillNum());
-            preparedStatement.setString(1, bill.getClient());
-            preparedStatement.setDouble(3, bill.getAmount());
-            preparedStatement.setDate(4, (Date)bill.getBillDate());
+            preparedStatement.setInt(1, bill.getClientId());
+            preparedStatement.setDouble(4, bill.getAmount());
+            preparedStatement.setDate(3, sqlDateFacture);
 
             int rowsInserted = preparedStatement.executeUpdate();
 
@@ -118,6 +118,7 @@ public class BillProvider implements ProviderMethod {
             if (resultSet.next()) {
                 Bill bill = new Bill(
                     resultSet.getInt("id"),
+                        resultSet.getInt("id_client"),
                     resultSet.getString("bill_num"),
                     resultSet.getString("client_name"),
                     resultSet.getDate("bill_date"),
@@ -145,6 +146,7 @@ public class BillProvider implements ProviderMethod {
             while (resultSet.next()) {
                 Bill bill = new Bill(
                     resultSet.getInt("id"),
+                        resultSet.getInt("id_client"),
                     resultSet.getString("bill_num"),
                     resultSet.getString("client_name"),
                     resultSet.getDate("bill_date"),

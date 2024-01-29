@@ -5,23 +5,43 @@ import java.util.Date;
 public class Reservation extends IdentifiedObject{
     int r,c;
     String clientName;
-    String roomId;
+    String roomNum;
+    int roomId;
+    private int clientId;
     private Date dateArrivee;
     private Date dateDepart;
     private Date dateReservation;
     private ReservationStatement reservationStatement;
-    public  Reservation(int id, String roomId ,String clientId, Date dateArrivee, Date dateDepart, Date dateReservation, ReservationStatement reservationStatement){
+    public  Reservation(int id, int clientId, int roomId, String roomNum ,String clientName, Date dateArrivee, Date dateDepart, Date dateReservation, ReservationStatement reservationStatement){
+        this.roomNum = roomNum;
         this.roomId = roomId;
         this.dateArrivee = dateArrivee;
         this.dateDepart = dateDepart;
-        this.clientName = clientId;
+        this.clientName = clientName;
         this.id = id;
+        this.clientId = clientId;
         this.dateReservation = dateReservation;
         this.reservationStatement = reservationStatement;
     }
+
+    public int getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(int roomId) {
+        this.roomId = roomId;
+    }
+
+    public int getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(int clientId) {
+        this.clientId = clientId;
+    }
    
     public void setChambre(String roomId) {
-        this.roomId = roomId;
+        this.roomNum = roomId;
     }
 
     public void setDateArrivee(Date dateArrivee) {
@@ -43,16 +63,16 @@ public class Reservation extends IdentifiedObject{
     public Date getDateArrivee() {
         return  dateArrivee;
     }
-
+    
     public Date getDateDepart() {
         return  dateDepart;
     }
 
-    public String getRoomId() {
-        return roomId;
+    public String getRoomNum() {
+        return roomNum;
     }
 
-    public String getClientId() {
+    public String getClientName() {
         return clientName;
     }
 

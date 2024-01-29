@@ -26,16 +26,16 @@ public class ListRoomView extends javax.swing.JInternalFrame {
         this.s = s;
     }
     private void roomListSelectionChanged() {
-                                      
+        /*
         int selectedIndex = RoomList.getSelectedRow();
-    
+        
         if (selectedIndex >= 0 && selectedIndex < controller.getRooms().size()) {
-            // L'index est valide, on peut accéder à la liste des chambres
-            s.onSelected(controller.getRooms().get(selectedIndex));
+        // L'index est valide, on peut accéder à la liste des chambres
+        s.onSelected(controller.getRooms().get(selectedIndex));
         } else {
-            // L'index n'est pas valide, peut-être aucune ligne n'est sélectionnée
-            // Vous pouvez gérer cela en conséquence, par exemple, en ne faisant rien
-        }
+        // L'index n'est pas valide, peut-être aucune ligne n'est sélectionnée
+        
+        }*/
     }
 
    public void setRoomTableData(List<Room> rooms) {
@@ -90,6 +90,9 @@ public class ListRoomView extends javax.swing.JInternalFrame {
         RoomList.setRowHeight(25);
         RoomList.setRowMargin(1);
         RoomList.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                RoomListMouseClicked(evt);
+            }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 RoomListMouseReleased(evt);
             }
@@ -143,8 +146,8 @@ public class ListRoomView extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void RoomListMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RoomListMouseReleased
-        int i = RoomList.getSelectedRow();
-        s.onSelected(controller.getRooms().get(i));
+        /*int i = RoomList.getSelectedRow();
+        s.onSelected(controller.getRooms().get(i));*/
     }//GEN-LAST:event_RoomListMouseReleased
 
     private void Rechercher2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Rechercher2ActionPerformed
@@ -173,6 +176,19 @@ public class ListRoomView extends javax.swing.JInternalFrame {
         setRoomTableData(filteredRooms);
         
     }//GEN-LAST:event_Rechercher2KeyReleased
+
+    private void RoomListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RoomListMouseClicked
+                                       
+        int selectedIndex = RoomList.getSelectedRow();
+    
+        if (selectedIndex >= 0 && selectedIndex < controller.getRooms().size()) {
+            // L'index est valide, on peut accéder à la liste des chambres
+            s.onSelected(controller.getRooms().get(selectedIndex));
+        } else {
+            // L'index n'est pas valide, peut-être aucune ligne n'est sélectionnée
+         
+        }
+    }//GEN-LAST:event_RoomListMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

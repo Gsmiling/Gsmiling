@@ -4,16 +4,26 @@ import java.util.Date;
 
 public class Bill extends IdentifiedObject{
     private Date billDate;
+    private int clientId;
     private double amount;
     private String client;
     private String billNum;
-    public Bill(int id, String billNum,String client, Date billDate, double amount){
+    public Bill(int id, int clientId, String billNum,String client, Date billDate, double amount){
         this.amount = amount;
         this.billDate = billDate;
+        this.clientId = clientId ;
         this.id =id;
         this.billNum = billNum;
         this.client = client;
 
+    }
+
+    public int getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(int clientId) {
+        this.clientId = clientId;
     }
 
     public String getClient() {

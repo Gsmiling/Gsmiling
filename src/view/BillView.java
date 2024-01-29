@@ -41,11 +41,7 @@ public class BillView extends javax.swing.JInternalFrame  {
         setBillTableData(controller.getBills());
     }
     
-    public BillView(BillController controller,Client client){
-         initComponents();
-        this.client = client;
-        this.controller = controller;
-    }
+    
      public void setBillTableData(List<Bill> bills) {
         // Met à jour la table des réservation dans la vue avec les données fournies
 
@@ -304,7 +300,7 @@ public class BillView extends javax.swing.JInternalFrame  {
         @Override
         public void onSelected(IdentifiedObject object) {
         bcl.setText(((Client)object).getNameCli());
-        Client selectedClient = (Client) object;
+        client = (Client) object;
         //                 System.out.println("Client sélectionné - ID : " + client.getNameCli());
         System.out.println(".onSelected()");
         int result = JOptionPane.showConfirmDialog(parent, "Confirmez-vous votre choix : ", "Confirmation", JOptionPane.YES_NO_OPTION);
@@ -329,6 +325,7 @@ public class BillView extends javax.swing.JInternalFrame  {
         
         Bill bill = new Bill(
                 1, 
+                client.getId(),
                 bnum,
                 client.getNameCli(),
                 billDate,

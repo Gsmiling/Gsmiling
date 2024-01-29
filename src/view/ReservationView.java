@@ -47,12 +47,13 @@ public final class ReservationView extends javax.swing.JInternalFrame  {
         // Ajoutez une nouvelle ligne pour chaque réservation
         model.addRow(new Object[]{
             
-            reservation.getRoomId(),
+            reservation.getRoomNum(),
             reservation.getClientId(),
             reservation.getDateArrivee(),
             reservation.getDateDepart(),
             reservation.getDateReservation(),
             reservation.getReservationStatement()
+                
         });
     }
     }
@@ -302,8 +303,10 @@ public final class ReservationView extends javax.swing.JInternalFrame  {
         String status = chstatus.getSelectedItem().toString();
         Reservation reservation = new Reservation(
                 controller.getReservations().get(index).getId(), 
-                controller.getReservations().get(index).getRoomId(), 
                 controller.getReservations().get(index).getClientId(),
+                controller.getReservations().get(index).getRoomId(),
+                controller.getReservations().get(index).getRoomNum(), 
+                controller.getReservations().get(index).getClientName(),
                 arrivee, 
                 depart, 
                 dreservation, 
@@ -329,8 +332,10 @@ public final class ReservationView extends javax.swing.JInternalFrame  {
         String status = chstatus.getSelectedItem().toString();
         Reservation reservation = new Reservation(
                 controller.getReservations().get(index).getId(), 
-                controller.getReservations().get(index).getRoomId(), 
                 controller.getReservations().get(index).getClientId(),
+                controller.getReservations().get(index).getRoomId(),
+                controller.getReservations().get(index).getRoomNum(), 
+                controller.getReservations().get(index).getClientName(),
                 arrivee, 
                 depart, 
                 dreservation, 
@@ -371,6 +376,8 @@ public final class ReservationView extends javax.swing.JInternalFrame  {
         String status = chstatus.getSelectedItem().toString();
         Reservation reservation = new Reservation(
                 1, 
+                 client.getId(),
+                room.getId(),
                 room.getNumeroChambre(),
                 client.getNameCli(),
                 arrivee, 
@@ -424,7 +431,7 @@ public final class ReservationView extends javax.swing.JInternalFrame  {
             @Override
             public void onSelected(IdentifiedObject object) {
                 chnum.setText(((Room)object).getNumeroChambre());
-               Room selectedClient = (Room) object;
+               room = (Room) object;
                
 //                System.out.println(".onSelected()"+ room.getNumeroChambre());
         System.out.println("view.ReservationView.jLabel42MouseClicked()");
@@ -450,8 +457,8 @@ public final class ReservationView extends javax.swing.JInternalFrame  {
             @Override
             public void onSelected(IdentifiedObject object) {
                 chclient.setText(((Client)object).getNameCli());
-                 Client selectedClient = (Client) object;
-//                 System.out.println("Client sélectionné - ID : " + client.getNameCli());
+                 client = (Client) object;
+                 System.out.println("Client sélectionné - ID : " + client.getNameCli());
                 System.out.println(".onSelected()");
          int result = JOptionPane.showConfirmDialog(parent, "Confirmez-vous votre choix : ", "Confirmation", JOptionPane.YES_NO_OPTION);
 
