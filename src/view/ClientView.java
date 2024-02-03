@@ -8,17 +8,15 @@ import controller.ClientController;
 import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
-import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import model.Client;
 import model.ClientCategory;
-import provider.ClientProvider;
 import utils.ImagePicker;
 
 /**
@@ -53,7 +51,7 @@ public final class ClientView extends javax.swing.JInternalFrame {
         System.out.println(client);
         // Ajoutez une nouvelle ligne pour chaque client
         model.addRow(new Object[]{
-                client.getId(),
+            
                 client.getNameCli(),
                 client.getFirstName(),
                 client.getNumCart(),
@@ -129,13 +127,13 @@ public final class ClientView extends javax.swing.JInternalFrame {
         ClientList.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
         ClientList.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Matricule", "Nom", "Prenom", "N°Carte", "N°Telephone", "Nationalité", "Categorie", "Adresse"
+                "Nom", "Prenom", "N°Carte", "N°Telephone", "Nationalité", "Categorie", "Adresse"
             }
         ));
         ClientList.setGridColor(new java.awt.Color(0, 153, 153));
@@ -381,7 +379,6 @@ public final class ClientView extends javax.swing.JInternalFrame {
     private void EditButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditButtonActionPerformed
         int index = ClientList.getSelectedRow();
         DefaultTableModel model = (DefaultTableModel) ClientList.getModel();
-        int id = (int) model.getValueAt(index, 0);
         String nom = clnom.getText();
         String prenom = clprenom.getText();
         int carte = Integer.parseInt(clcarte.getText());
@@ -408,7 +405,6 @@ public final class ClientView extends javax.swing.JInternalFrame {
     private void DeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteButtonActionPerformed
         int index = ClientList.getSelectedRow();
         DefaultTableModel model = (DefaultTableModel) ClientList.getModel();
-        int id =(int) model.getValueAt(index, 0);
         String nom = clnom.getText();
         String prenom = clprenom.getText();
         int carte = Integer.parseInt(clcarte.getText());
@@ -416,7 +412,7 @@ public final class ClientView extends javax.swing.JInternalFrame {
         String nationalite = clnationalite.getSelectedItem().toString();
         String categorie = clcategorie.getSelectedItem().toString();
         String adresse = cladresse.getText();
-        Client cl = new Client(id, nom, prenom, carte, phone, nationalite, adresse, ClientCategory.fromString(categorie), null);
+        Client cl = new Client(controller.getClients().get(index).getId(), nom, prenom, carte, phone, nationalite, adresse, ClientCategory.fromString(categorie), null);
      int p = JOptionPane.showConfirmDialog(null, "êtes vous sûre de vouloir supprimer ce client?","Suprimer",JOptionPane.YES_NO_OPTION);
      if(p == 0){
       if(controller.deleteClient(cl)) {
@@ -478,27 +474,33 @@ public final class ClientView extends javax.swing.JInternalFrame {
 
     private void RechercherKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RechercherKeyReleased
 
-        /*  try {
-        ps = con.prepareStatement("SELECT client.id AS Matricule , client.nom AS Firstname , categorie.intitule AS CategorieName FROM Client JOIN Categorie ON client.categorie_id=categorie.id where nom like ? ");
-        ps.setString(1,"%" +Rechercher.getText() + "%");
-        rs=ps.executeQuery();
-        // TableClients.setModel(DbUtils.resultSetToTableModel(rs));
-        } catch (SQLException ex) {
-        System.err.print(ex.getMessage());// fonction pour rechercher en tapant n'importe quoi
-        }*/
-        // TODO add your handling code here:
+        String searchText = Rechercher.getText().trim().toLowerCase();
+        filterClients(searchText);
+     }
+
+    private void filterClients(String searchText) {
+           List<Client> allClients = controller.getClients();
+           List<Client> filteredClients = new ArrayList<>();
+
+           for (Client client : allClients) {
+               if (client.getNameCli().toLowerCase().contains(searchText) || client.getFirstName().toLowerCase().contains(searchText)) {
+                   filteredClients.add(client);
+               }
+            }
+
+         setClientTableData(filteredClients);
     }//GEN-LAST:event_RechercherKeyReleased
 
     private void ClientListMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ClientListMouseReleased
        int i = ClientList.getSelectedRow();
               DefaultTableModel model=(DefaultTableModel) ClientList.getModel();
-                 clnom.setText(model.getValueAt(i, 1).toString());
-                 clprenom.setText(model.getValueAt(i, 2).toString());
-                 clcarte.setText(model.getValueAt(i, 3).toString());
-                 clphone.setText(model.getValueAt(i, 4).toString());
-                 clnationalite.setSelectedItem(model.getValueAt(i, 5).toString());
-                  clcategorie.setSelectedItem(model.getValueAt(i, 6).toString());
-                  cladresse.setText(model.getValueAt(i, 7).toString());
+                 clnom.setText(model.getValueAt(i, 0).toString());
+                 clprenom.setText(model.getValueAt(i, 1).toString());
+                 clcarte.setText(model.getValueAt(i, 2).toString());
+                 clphone.setText(model.getValueAt(i, 3).toString());
+                 clnationalite.setSelectedItem(model.getValueAt(i, 4).toString());
+                  clcategorie.setSelectedItem(model.getValueAt(i, 5).toString());
+                  cladresse.setText(model.getValueAt(i, 6).toString());
                   byte [] photo = controller.getClients().get(i).getPhoto();
                   if(photo != null){
             photoLabel.setIcon(resizeImage(null,photo));

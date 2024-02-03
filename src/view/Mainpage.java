@@ -38,7 +38,7 @@ public class Mainpage extends javax.swing.JFrame {
     public void accueil(){
          this.mere.removeAll();
         this.mere.repaint();
-        ListRoomView cl = new ListRoomView(roomController);
+        AccueilView cl = new AccueilView();
         this.mere.add(cl);
         try {
         cl.setMaximum(true);

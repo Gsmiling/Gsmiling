@@ -135,7 +135,7 @@ public class BillProvider implements ProviderMethod {
     }
 
    public List<Bill> getAllBills(){
-       String sql = "SELECT bill.id, bill.bill_num, client.client_name ,bill.bill_date, bill.amount"
+       String sql = "SELECT bill.id, bill.id_client, bill.bill_num, client.client_name ,bill.bill_date, bill.amount"
                + "  FROM bill INNER JOIN client ON client.id = bill.id_client";
 
         try {

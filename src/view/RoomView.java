@@ -5,6 +5,7 @@
 package view;
 
 import controller.RoomController;
+import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -414,15 +415,25 @@ public final class RoomView extends javax.swing.JInternalFrame {
 
     private void RechercherKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RechercherKeyReleased
 
-        /*try {
-        ps = con.prepareStatement("SELECT client.id AS Matricule , client.nom AS Firstname , categorie.intitule AS CategorieName FROM Client JOIN Categorie ON client.categorie_id=categorie.id where nom like ? ");
-        ps.setString(1,"%" +Rechercher.getText() + "%");
-        rs=ps.executeQuery();
-        // TableClients.setModel(DbUtils.resultSetToTableModel(rs));
-        } catch (SQLException ex) {
-        System.err.print(ex.getMessage());// fonction pour rechercher en tapant n'importe quoi
-        }*/
-        // TODO add your handling code here:
+        String searchText = Rechercher.getText().trim().toLowerCase();
+        filterRooms(searchText);
+    }
+
+    private void filterRooms(String searchText) {
+        List<Room> filteredRooms = new ArrayList<>();
+
+        for (Room room : controller.getRooms()) {
+            if (room.getNumeroChambre().toLowerCase().contains(searchText) ||
+                room.getRoomType().toString().contains(searchText) ||
+                room.getLocation().toString().contains(searchText) ||
+                room.getCharacteristic().toString().contains(searchText) ||
+                room.getStatus().toLowerCase().contains(searchText) ||
+                String.valueOf(room.getPrix()).toLowerCase().contains(searchText)) {
+                filteredRooms.add(room);
+            }
+        }
+
+        setRoomTableData(filteredRooms);
     }//GEN-LAST:event_RechercherKeyReleased
 
     private void roomcategoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roomcategoryActionPerformed

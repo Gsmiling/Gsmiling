@@ -31,14 +31,13 @@ public class ServiceProvider implements ProviderMethod {
             return false;
         }
 
-        String sql = "INSERT INTO service (champ1, champ2, champ3) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO service (designation, description) VALUES (?, ?)";
 
         try {
             PreparedStatement preparedStatement = provider.getConnection().prepareStatement(sql);
             Service service = (Service) object;
-            preparedStatement.setInt(1, service.getId());
-            preparedStatement.setString(2, service.getDesignation());
-             preparedStatement.setString(3, service.getDescription());
+            preparedStatement.setString(1, service.getDesignation());
+             preparedStatement.setString(2, service.getDescription());
         
 
             int rowsInserted = preparedStatement.executeUpdate();
@@ -80,14 +79,14 @@ public class ServiceProvider implements ProviderMethod {
             return false;
         }
 
-        String sql = "UPDATE service SET champ1 = ?, champ2 = ?, champ3 = ? WHERE id = ?";
+        String sql = "UPDATE service SET designation = ?, description = ? WHERE id = ?";
 
         try {
             PreparedStatement preparedStatement = provider.getConnection().prepareStatement(sql);
             Service service = (Service) object;
-            preparedStatement.setInt(1, service.getId());
-            preparedStatement.setString(2, service.getDesignation());
-            preparedStatement.setString(3, service.getDescription());
+            preparedStatement.setInt(3, service.getId());
+            preparedStatement.setString(1, service.getDesignation());
+            preparedStatement.setString(2, service.getDescription());
             int rowsUpdated = preparedStatement.executeUpdate();
 
             return rowsUpdated > 0; // Vérifie si une ligne a été mise à jour avec succès
@@ -126,10 +125,9 @@ public class ServiceProvider implements ProviderMethod {
 
         return null;
     }
-
-    @Override
-    public List<IdentifiedObject> getAll() {
-        String sql = "SELECT * FROM service";
+    
+     public List<Service> getAllServices(){
+         String sql = "SELECT * FROM service";
 
         try {
             PreparedStatement preparedStatement = provider.getConnection().prepareStatement(sql);
@@ -152,5 +150,15 @@ public class ServiceProvider implements ProviderMethod {
         }
 
         return new ArrayList<>();
+    }
+     
+
+    @Override
+    public List<IdentifiedObject> getAll() {
+          List<IdentifiedObject> obj  = new ArrayList<>();
+                obj.addAll(getAllServices());
+        return obj;
+    
+
     }
 }

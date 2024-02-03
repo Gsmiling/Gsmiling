@@ -27,21 +27,21 @@ public class ServiceView extends javax.swing.JInternalFrame  {
     private void initComponents() {
 
         jScrollPane7 = new javax.swing.JScrollPane();
-        BillList2 = new javax.swing.JTable();
+        billList = new javax.swing.JTable();
         jLabel46 = new javax.swing.JLabel();
-        jTextField21 = new javax.swing.JTextField();
+        designation = new javax.swing.JTextField();
         jLabel49 = new javax.swing.JLabel();
-        jTextField22 = new javax.swing.JTextField();
+        description = new javax.swing.JTextField();
         jLabel50 = new javax.swing.JLabel();
         Rechercher2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        AddServiceButton = new javax.swing.JButton();
+        DeleteServiceButton = new javax.swing.JButton();
+        EditServiceButton = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        BillList2.setModel(new javax.swing.table.DefaultTableModel(
+        billList.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -52,20 +52,20 @@ public class ServiceView extends javax.swing.JInternalFrame  {
                 "Désignation", "Description"
             }
         ));
-        BillList2.setGridColor(new java.awt.Color(0, 153, 153));
-        BillList2.setRowHeight(25);
-        BillList2.setRowMargin(1);
-        jScrollPane7.setViewportView(BillList2);
+        billList.setGridColor(new java.awt.Color(0, 153, 153));
+        billList.setRowHeight(25);
+        billList.setRowMargin(1);
+        jScrollPane7.setViewportView(billList);
 
         jLabel46.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
         jLabel46.setText("DESIGNATION");
 
-        jTextField21.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
+        designation.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
 
         jLabel49.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
         jLabel49.setText("DESCRIPTION");
 
-        jTextField22.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
+        description.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
 
         jLabel50.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
         jLabel50.setText("Rechercher");
@@ -81,28 +81,28 @@ public class ServiceView extends javax.swing.JInternalFrame  {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(51, 153, 0));
-        jButton1.setFont(new java.awt.Font("Cantarell", 1, 22)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("AJOUTER");
+        AddServiceButton.setBackground(new java.awt.Color(51, 153, 0));
+        AddServiceButton.setFont(new java.awt.Font("Cantarell", 1, 22)); // NOI18N
+        AddServiceButton.setForeground(new java.awt.Color(255, 255, 255));
+        AddServiceButton.setText("AJOUTER");
 
-        jButton2.setBackground(new java.awt.Color(153, 0, 51));
-        jButton2.setFont(new java.awt.Font("Cantarell", 1, 22)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("SUPPRIMER");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        DeleteServiceButton.setBackground(new java.awt.Color(153, 0, 51));
+        DeleteServiceButton.setFont(new java.awt.Font("Cantarell", 1, 22)); // NOI18N
+        DeleteServiceButton.setForeground(new java.awt.Color(255, 255, 255));
+        DeleteServiceButton.setText("SUPPRIMER");
+        DeleteServiceButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                DeleteServiceButtonActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(0, 102, 255));
-        jButton3.setFont(new java.awt.Font("Cantarell", 1, 22)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("MODIFIER");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        EditServiceButton.setBackground(new java.awt.Color(0, 102, 255));
+        EditServiceButton.setFont(new java.awt.Font("Cantarell", 1, 22)); // NOI18N
+        EditServiceButton.setForeground(new java.awt.Color(255, 255, 255));
+        EditServiceButton.setText("MODIFIER");
+        EditServiceButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                EditServiceButtonActionPerformed(evt);
             }
         });
 
@@ -114,11 +114,11 @@ public class ServiceView extends javax.swing.JInternalFrame  {
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(AddServiceButton)
                         .addGap(173, 173, 173)
-                        .addComponent(jButton3)
+                        .addComponent(EditServiceButton)
                         .addGap(171, 171, 171)
-                        .addComponent(jButton2))
+                        .addComponent(DeleteServiceButton))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 1123, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createSequentialGroup()
@@ -127,8 +127,8 @@ public class ServiceView extends javax.swing.JInternalFrame  {
                                 .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(59, 59, 59)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextField21, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
-                                .addComponent(jTextField22))
+                                .addComponent(designation, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
+                                .addComponent(description))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(65, 65, 65)
@@ -142,7 +142,7 @@ public class ServiceView extends javax.swing.JInternalFrame  {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(designation, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createSequentialGroup()
@@ -151,12 +151,12 @@ public class ServiceView extends javax.swing.JInternalFrame  {
                 .addGap(61, 61, 61)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(description, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(AddServiceButton)
+                    .addComponent(DeleteServiceButton)
+                    .addComponent(EditServiceButton))
                 .addGap(32, 32, 32)
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 382, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -182,13 +182,13 @@ public class ServiceView extends javax.swing.JInternalFrame  {
         // TODO add your handling code here:
     }//GEN-LAST:event_Rechercher2KeyReleased
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void DeleteServiceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteServiceButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_DeleteServiceButtonActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void EditServiceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditServiceButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_EditServiceButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -226,16 +226,16 @@ public class ServiceView extends javax.swing.JInternalFrame  {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTable BillList2;
+    private javax.swing.JButton AddServiceButton;
+    private javax.swing.JButton DeleteServiceButton;
+    private javax.swing.JButton EditServiceButton;
     private javax.swing.JTextField Rechercher2;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JTable billList;
+    private javax.swing.JTextField description;
+    private javax.swing.JTextField designation;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JScrollPane jScrollPane7;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
     // End of variables declaration//GEN-END:variables
 }

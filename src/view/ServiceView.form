@@ -29,11 +29,11 @@
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="AddServiceButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
-                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      <Component id="EditServiceButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
-                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <Component id="DeleteServiceButton" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jScrollPane7" min="-2" pref="1123" max="-2" attributes="0"/>
@@ -44,8 +44,8 @@
                           </Group>
                           <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jTextField21" pref="201" max="32767" attributes="0"/>
-                              <Component id="jTextField22" max="32767" attributes="0"/>
+                              <Component id="designation" pref="201" max="32767" attributes="0"/>
+                              <Component id="description" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="jLabel50" min="-2" pref="139" max="-2" attributes="0"/>
@@ -65,7 +65,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel46" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="jTextField21" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="designation" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="jLabel50" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
@@ -78,13 +78,13 @@
               <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel49" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="jTextField22" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                  <Component id="description" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="61" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AddServiceButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="DeleteServiceButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EditServiceButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               <Component id="jScrollPane7" min="-2" pref="382" max="-2" attributes="0"/>
@@ -101,7 +101,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="BillList2">
+        <Component class="javax.swing.JTable" name="billList">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="2" rowCount="4">
@@ -143,7 +143,7 @@
         <Property name="text" type="java.lang.String" value="DESIGNATION"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField21">
+    <Component class="javax.swing.JTextField" name="designation">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Cantarell" size="18" style="0"/>
@@ -158,7 +158,7 @@
         <Property name="text" type="java.lang.String" value="DESCRIPTION"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField22">
+    <Component class="javax.swing.JTextField" name="description">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Cantarell" size="18" style="0"/>
@@ -179,7 +179,7 @@
         <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="Rechercher2KeyReleased"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="AddServiceButton">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="99" red="33" type="rgb"/>
@@ -193,7 +193,7 @@
         <Property name="text" type="java.lang.String" value="AJOUTER"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="DeleteServiceButton">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="0" red="99" type="rgb"/>
@@ -207,10 +207,10 @@
         <Property name="text" type="java.lang.String" value="SUPPRIMER"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DeleteServiceButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="EditServiceButton">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="66" red="0" type="rgb"/>
@@ -224,7 +224,7 @@
         <Property name="text" type="java.lang.String" value="MODIFIER"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EditServiceButtonActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
